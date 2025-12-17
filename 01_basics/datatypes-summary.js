@@ -17,7 +17,7 @@ const bigNumber = 3456543576654356754n // BigInt
 const id = Symbol('123') // Symbol
 const anotherId = Symbol('123') // Symbol
 
-console.log(id === anotherId);
+// console.log(id === anotherId);
 
 
 //Reference Type (Datatypes) (Non Primitive)
@@ -35,4 +35,4 @@ const myFunction = function() {
     console.log("Hello World");
 }
 
-myFunction();
+console.log(typeof scoreValue);
