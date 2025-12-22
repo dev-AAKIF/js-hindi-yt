@@ -85,9 +85,9 @@ const {courseInstructor: instructor} = course
 // arr.splice(0, arr.length)
 // console.log(arr);
 
-const arr = [];
+// const arr = [];
 
-arr["name"] = "Akif";
-arr["age"] = 23;
+// arr["name"] = "Akif";
+// arr["age"] = 23;
 
-console.log(arr)
+// console.log(arr)
