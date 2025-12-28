@@ -33,7 +33,7 @@ const result = addTwoNumbers(2,3)
 
 function loginUserMessage (username) {
     if(!username) {
-        console.log("Please Enter a Username");
+        // console.log("Please Enter a Username");
         return
     }
     return  `${username} logged In Successfully`
@@ -47,4 +47,39 @@ function loginUserMessage (username) {
 //     return  `${username} logged In Successfully`
 // }
 
-console.log(loginUserMessage("Akif"));
+// console.log(loginUserMessage("Akif"));
+
+// function calculateCartPrice(num1) {
+//     return num1
+// } // => in this example, only the first value is returned and hence we need to use rest/spread operator
+
+function calculateCartPrice(val1, val2, ...num1) {
+    return num1
+}
+
+// console.log(calculateCartPrice(200, 400, 500, 2000, 30000));
+
+const user = {
+    username: "Akif",
+    price: 300
+}
+
+function handleObject(anyobject) {
+    console.log(`username is ${anyobject.username} and price is ${anyobject.price}`)
+}
+
+// handleObject(user); // => passing the exact object which has been declared earlier
+handleObject({
+    username: "Sam",
+    price: 599
+}) // => passing the object as an argument
+
+const myNewArray = [200,300,400,500]
+
+function returnSecondValue(anyArray) {
+    return anyArray[1]
+}
+
+// console.log(returnSecondValue(myNewArray)); //=> passing an already declared array
+console.log(returnSecondValue([1100,1200,1300,1400])); //=> passing an array through argument
+
