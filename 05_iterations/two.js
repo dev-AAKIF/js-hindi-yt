@@ -23,7 +23,7 @@ while (arr < myArray.length) {
 
 
 
-
+ 
 // do while loop
 
 
