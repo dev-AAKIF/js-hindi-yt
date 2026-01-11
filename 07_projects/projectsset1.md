@@ -6,7 +6,7 @@
 
 # Solution Code
 
-## Project 1
+## Project 1 Solution
 
 ```Javascript
 
@@ -85,7 +85,7 @@ buttons.forEach(function (button) {
 
 
 
-## Project 2
+## Project 2 Solution
 
 ```Javascript
 
