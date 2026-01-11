@@ -1,87 +1,72 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <title>Your Local Time</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-    <style>
-      body {
-        background-color: #212121;
-        font-family: "Poppins", sans-serif;
-        color: #fff;
-        margin: 0;
-      }
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* ✅ removes scrollbar */
+  }
 
-      .center {
-        display: flex;
-        min-height: 100vh;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        padding: 16px;
-        text-align: center;
-      }
+  body {
+    background-color: #212121;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
 
-      #banner {
-        font-size: 18px;
-        font-weight: 400;
-        opacity: 0.9;
-      }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-      #clock,
-      #clock2 {
-        font-size: 40px;
-        font-weight: 600;
-        background: linear-gradient(to right, #3367bb, #3e4044);
-        padding: 20px 50px;
-        margin-top: 12px;
-        border-radius: 10px;
-        white-space: nowrap;
-      }
+  .center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
-      @media (max-width: 768px) {
-        #clock,
-        #clock2 {
-          font-size: 32px;
-          padding: 16px 36px;
-        }
+  #banner {
+    font-size: 18px;
+    font-weight: 400;
+    opacity: 0.9;
+    margin-bottom: 10px;
+  }
 
-        #banner {
-          font-size: 16px;
-        }
-      }
+  #clock {
+    font-size: 40px;
+    font-weight: 600;
+    background: linear-gradient(to right, #3367bb, #3e4044);
+    padding: 20px 50px;
+    border-radius: 10px;
+    white-space: nowrap;
+  }
 
-      @media (max-width: 480px) {
-        .center {
-          min-height: 90vh;
-        }
+  /* ===== Tablet ===== */
+  @media (max-width: 768px) {
+    #clock {
+      font-size: 32px;
+      padding: 16px 36px;
+    }
 
-        #clock {
-          font-size: 24px;
-          padding: 14px 24px;
-          border-radius: 8px;
-        }
+    #banner {
+      font-size: 16px;
+    }
+  }
 
-        #banner {
-          font-size: 14px;
-        }
-      }
-    </style>
-  </head>
-  
-  <body>
-    <div class="center">
-      <div id="banner"><span>Your local time</span></div>
-      <div id="clock"></div>
-    </div>
-    <script src="./script.js"></script>
-  </body>
-</html>
+  /* ===== Mobile ===== */
+  @media (max-width: 480px) {
+    #clock {
+      font-size: 24px;
+      padding: 14px 24px;
+      border-radius: 8px;
+    }
+
+    #banner {
+      font-size: 14px;
+    }
+  }
+</style>
