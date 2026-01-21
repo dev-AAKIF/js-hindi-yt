@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>htnml Events </title>
+    <title>html Events </title>
 </head>
 <body style="background-color: #414141; color: aliceblue;">
     <h2>Amazing image</h2>
@@ -17,6 +17,56 @@
             <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
         </ul>
    </div>
+   
 </body>
+<script>
+    // document.getElementById('owl').onclick = function() {
+    //     alert('Owl got clicked through JS')
+    // }
 
+    // attachEvent()
+    // jQuery => on
+
+    // types, timeStamp, defaultPrevented,
+    // target, toElement, srcElement, currentTarget,
+    // clietnX, clientY, screenX, screenY 
+    // altKey, ctrlKey, shiftKey, keyCode
+
+
+    // document.getElementById('owl').addEventListener('click', function (e) {
+
+    //     const currentTime = new Date()
+    //     console.log(e);
+    //     // console.log(e.timeStamp);
+    //     // console.log(e.timeStamp.toLocaleString()); 
+    //     // console.log(currentTime.toLocaleString());         
+    // }, false);
+
+    // document.getElementById('images').addEventListener('click', function (e) {
+    //     console.log("Cliced Inside the UL");
+    // }, false);
+
+    // document.getElementById('owl').addEventListener('click', function (e) {
+    //     console.log("Owl Clicked");
+    //     e.stopPropagation();
+    // }, false);
+
+    // document.getElementById("google").addEventListener('click', function(e) {
+    //     e.preventDefault();
+    //     e.stopPropagation();
+    //     console.log("Clicked on Google");
+    // }, false);
+
+    document.querySelector("#images").addEventListener('click', function(e) {
+        // console.log(e.target.parentNode);
+        console.log(e.target.tagName);
+        if(e.target.tagName === "IMG") {
+            let removeIt = e.target.parentNode
+            removeIt.remove();
+        }
+        // removeIt.parentNode.removeChild(removeIt);
+    }, false);
+
+
+</script>
 </html>
