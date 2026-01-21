@@ -354,10 +354,12 @@ document.querySelector("#stop").addEventListener('click', stopChangingColor);
 
 ```javascript
 
+
 ```
 
 ## Project 9
 
 ```javascript
+
 
 ```
